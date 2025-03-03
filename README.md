@@ -24,6 +24,11 @@ Este projeto tem como objetivo desenvolver um sistema de gestão para uma confei
 2. Instalar o [PostgreSQL](https://www.postgresql.org/download/)
 3. Configurar o banco de dados conforme o arquivo `database/schema.sql`
 4. Clonar o repositório e importar o projeto no Eclipse
+5. Configurar o projeto como um projeto Java no Eclipse:
+   - Clique com o botão direito no projeto e selecione "Properties".
+   - Vá para "Java Build Path" e adicione a pasta `src` como source folder.
+6. Executar o programa:
+   - Clique com o botão direito no arquivo `Main.java` e selecione "Run As" > "Java Application".
 
 ## Contribuição
 Para contribuir com o projeto, faça um fork do repositório, crie uma branch para suas alterações e envie um pull request.
