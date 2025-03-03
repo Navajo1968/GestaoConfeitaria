@@ -1,0 +1,96 @@
+ O volume na unidade C n∆o tem nome.
+ O N£mero de SÇrie do Volume Ç 8AEF-BC08
+
+ Pasta de C:\Users\Rodrigo\eclipse-workspace\GestaoConfeitaria
+
+03/03/2025  14:45    <DIR>          .
+03/03/2025  14:45    <DIR>          ..
+03/03/2025  14:21    <DIR>          daily-log
+03/03/2025  14:24    <DIR>          database
+03/03/2025  14:45                 0 estruturadiretorios_arquivos.txt
+03/03/2025  14:30             1.177 README.md
+03/03/2025  14:11    <DIR>          src
+               2 arquivo(s)          1.177 bytes
+
+ Pasta de C:\Users\Rodrigo\eclipse-workspace\GestaoConfeitaria\daily-log
+
+03/03/2025  14:21    <DIR>          .
+03/03/2025  14:21    <DIR>          ..
+03/03/2025  14:20               705 2025-03-03.md
+               1 arquivo(s)            705 bytes
+
+ Pasta de C:\Users\Rodrigo\eclipse-workspace\GestaoConfeitaria\database
+
+03/03/2025  14:24    <DIR>          .
+03/03/2025  14:24    <DIR>          ..
+03/03/2025  14:24               824 schema.sql
+               1 arquivo(s)            824 bytes
+
+ Pasta de C:\Users\Rodrigo\eclipse-workspace\GestaoConfeitaria\src
+
+03/03/2025  14:11    <DIR>          .
+03/03/2025  14:11    <DIR>          ..
+03/03/2025  14:11    <DIR>          main
+               0 arquivo(s)              0 bytes
+
+ Pasta de C:\Users\Rodrigo\eclipse-workspace\GestaoConfeitaria\src\main
+
+03/03/2025  14:11    <DIR>          .
+03/03/2025  14:11    <DIR>          ..
+03/03/2025  14:12    <DIR>          java
+               0 arquivo(s)              0 bytes
+
+ Pasta de C:\Users\Rodrigo\eclipse-workspace\GestaoConfeitaria\src\main\java
+
+03/03/2025  14:12    <DIR>          .
+03/03/2025  14:12    <DIR>          ..
+03/03/2025  14:12    <DIR>          com
+               0 arquivo(s)              0 bytes
+
+ Pasta de C:\Users\Rodrigo\eclipse-workspace\GestaoConfeitaria\src\main\java\com
+
+03/03/2025  14:12    <DIR>          .
+03/03/2025  14:12    <DIR>          ..
+03/03/2025  14:19    <DIR>          gestaoconfeitaria
+               0 arquivo(s)              0 bytes
+
+ Pasta de C:\Users\Rodrigo\eclipse-workspace\GestaoConfeitaria\src\main\java\com\gestaoconfeitaria
+
+03/03/2025  14:19    <DIR>          .
+03/03/2025  14:19    <DIR>          ..
+03/03/2025  14:29    <DIR>          dao
+03/03/2025  14:13               755 Main.java
+03/03/2025  14:27    <DIR>          model
+03/03/2025  14:19    <DIR>          util
+               1 arquivo(s)            755 bytes
+
+ Pasta de C:\Users\Rodrigo\eclipse-workspace\GestaoConfeitaria\src\main\java\com\gestaoconfeitaria\dao
+
+03/03/2025  14:29    <DIR>          .
+03/03/2025  14:29    <DIR>          ..
+03/03/2025  14:16             1.805 ClienteDAO.java
+03/03/2025  14:28             2.392 PapelDAO.java
+03/03/2025  14:29             1.469 PermissaoDAO.java
+03/03/2025  14:28             2.610 UsuarioDAO.java
+               4 arquivo(s)          8.276 bytes
+
+ Pasta de C:\Users\Rodrigo\eclipse-workspace\GestaoConfeitaria\src\main\java\com\gestaoconfeitaria\model
+
+03/03/2025  14:27    <DIR>          .
+03/03/2025  14:27    <DIR>          ..
+03/03/2025  14:18               903 Cliente.java
+03/03/2025  14:26               621 Papel.java
+03/03/2025  14:27               377 Permissao.java
+03/03/2025  14:26               907 Usuario.java
+               4 arquivo(s)          2.808 bytes
+
+ Pasta de C:\Users\Rodrigo\eclipse-workspace\GestaoConfeitaria\src\main\java\com\gestaoconfeitaria\util
+
+03/03/2025  14:19    <DIR>          .
+03/03/2025  14:19    <DIR>          ..
+03/03/2025  14:19               635 ConnectionFactory.java
+               1 arquivo(s)            635 bytes
+
+     Total de Arquivos na Lista:
+              14 arquivo(s)         15.180 bytes
+              32 pasta(s)   324.484.890.624 bytes dispon°veis
