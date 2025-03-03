@@ -1,13 +1,16 @@
 package com.gestaoconfeitaria.model;
 
+import java.math.BigDecimal;
+import java.sql.Date;
 import java.sql.Timestamp;
 
-public class Cliente {
+public class Produto {
     private int id;
     private String nome;
-    private String endereco;
-    private String telefone;
-    private String email;
+    private String descricao;
+    private BigDecimal preco;
+    private Date validade;
+    private String tipo; // 'insumo' ou 'acabado'
     private Timestamp dtInclusao;
     private Timestamp dtAlteracao;
 
@@ -29,28 +32,36 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public BigDecimal getPreco() {
+        return preco;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setPreco(BigDecimal preco) {
+        this.preco = preco;
     }
 
-    public String getEmail() {
-        return email;
+    public Date getValidade() {
+        return validade;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setValidade(Date validade) {
+        this.validade = validade;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     public Timestamp getDtInclusao() {

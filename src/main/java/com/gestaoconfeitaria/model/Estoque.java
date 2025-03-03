@@ -1,13 +1,13 @@
 package com.gestaoconfeitaria.model;
 
+import java.sql.Date;
 import java.sql.Timestamp;
 
-public class Cliente {
+public class Estoque {
     private int id;
-    private String nome;
-    private String endereco;
-    private String telefone;
-    private String email;
+    private int produtoId;
+    private int quantidade;
+    private Date dataValidade;
     private Timestamp dtInclusao;
     private Timestamp dtAlteracao;
 
@@ -21,36 +21,28 @@ public class Cliente {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public int getProdutoId() {
+        return produtoId;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setProdutoId(int produtoId) {
+        this.produtoId = produtoId;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public int getQuantidade() {
+        return quantidade;
     }
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public Date getDataValidade() {
+        return dataValidade;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setDataValidade(Date dataValidade) {
+        this.dataValidade = dataValidade;
     }
 
     public Timestamp getDtInclusao() {

@@ -19,9 +19,20 @@ public class PapelDAO {
     }
 
     public void addPapel(Papel papel) {
-        String sql = "INSERT INTO papeis (nome) VALUES (?)";
+        String sql = "INSERT INTO papeis (nome, dt_inclusao, dt_alteracao) VALUES (?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)";
         try (PreparedStatement stmt = connection.prepareStatement(sql)) {
             stmt.setString(1, papel.getNome());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void updatePapel(Papel papel) {
+        String sql = "UPDATE papeis SET nome = ?, dt_alteracao = CURRENT_TIMESTAMP WHERE id = ?";
+        try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+            stmt.setString(1, papel.getNome());
+            stmt.setInt(2, papel.getId());
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -37,6 +48,8 @@ public class PapelDAO {
                 Papel papel = new Papel();
                 papel.setId(rs.getInt("id"));
                 papel.setNome(rs.getString("nome"));
+                papel.setDtInclusao(rs.getTimestamp("dt_inclusao"));
+                papel.setDtAlteracao(rs.getTimestamp("dt_alteracao"));
                 papel.setPermissoes(getPermissoesByPapelId(papel.getId()));
                 papeis.add(papel);
             }

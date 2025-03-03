@@ -2,7 +2,7 @@ package com.gestaoconfeitaria.model;
 
 import java.sql.Timestamp;
 
-public class Cliente {
+public class Fornecedor {
     private int id;
     private String nome;
     private String endereco;

@@ -19,11 +19,24 @@ public class UsuarioDAO {
     }
 
     public void addUsuario(Usuario usuario) {
-        String sql = "INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO usuarios (nome, email, senha, dt_inclusao, dt_alteracao) VALUES (?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)";
         try (PreparedStatement stmt = connection.prepareStatement(sql)) {
             stmt.setString(1, usuario.getNome());
             stmt.setString(2, usuario.getEmail());
             stmt.setString(3, usuario.getSenha());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void updateUsuario(Usuario usuario) {
+        String sql = "UPDATE usuarios SET nome = ?, email = ?, senha = ?, dt_alteracao = CURRENT_TIMESTAMP WHERE id = ?";
+        try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+            stmt.setString(1, usuario.getNome());
+            stmt.setString(2, usuario.getEmail());
+            stmt.setString(3, usuario.getSenha());
+            stmt.setInt(4, usuario.getId());
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -41,6 +54,8 @@ public class UsuarioDAO {
                 usuario.setNome(rs.getString("nome"));
                 usuario.setEmail(rs.getString("email"));
                 usuario.setSenha(rs.getString("senha"));
+                usuario.setDtInclusao(rs.getTimestamp("dt_inclusao"));
+                usuario.setDtAlteracao(rs.getTimestamp("dt_alteracao"));
                 usuario.setPapeis(getPapeisByUsuarioId(usuario.getId()));
                 usuarios.add(usuario);
             }

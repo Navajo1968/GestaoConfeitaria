@@ -1,8 +1,12 @@
 package com.gestaoconfeitaria.model;
 
+import java.sql.Timestamp;
+
 public class Permissao {
     private int id;
     private String nome;
+    private Timestamp dtInclusao;
+    private Timestamp dtAlteracao;
 
     // Getters e Setters
 
@@ -20,5 +24,21 @@ public class Permissao {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public Timestamp getDtInclusao() {
+        return dtInclusao;
+    }
+
+    public void setDtInclusao(Timestamp dtInclusao) {
+        this.dtInclusao = dtInclusao;
+    }
+
+    public Timestamp getDtAlteracao() {
+        return dtAlteracao;
+    }
+
+    public void setDtAlteracao(Timestamp dtAlteracao) {
+        this.dtAlteracao = dtAlteracao;
     }
 }

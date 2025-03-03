@@ -18,12 +18,26 @@ public class ClienteDAO {
     }
 
     public void addCliente(Cliente cliente) {
-        String sql = "INSERT INTO clientes (nome, endereco, telefone, email) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO clientes (nome, endereco, telefone, email, dt_inclusao, dt_alteracao) VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)";
         try (PreparedStatement stmt = connection.prepareStatement(sql)) {
             stmt.setString(1, cliente.getNome());
             stmt.setString(2, cliente.getEndereco());
             stmt.setString(3, cliente.getTelefone());
             stmt.setString(4, cliente.getEmail());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void updateCliente(Cliente cliente) {
+        String sql = "UPDATE clientes SET nome = ?, endereco = ?, telefone = ?, email = ?, dt_alteracao = CURRENT_TIMESTAMP WHERE id = ?";
+        try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+            stmt.setString(1, cliente.getNome());
+            stmt.setString(2, cliente.getEndereco());
+            stmt.setString(3, cliente.getTelefone());
+            stmt.setString(4, cliente.getEmail());
+            stmt.setInt(5, cliente.getId());
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -42,6 +56,8 @@ public class ClienteDAO {
                 cliente.setEndereco(rs.getString("endereco"));
                 cliente.setTelefone(rs.getString("telefone"));
                 cliente.setEmail(rs.getString("email"));
+                cliente.setDtInclusao(rs.getTimestamp("dt_inclusao"));
+                cliente.setDtAlteracao(rs.getTimestamp("dt_alteracao"));
                 clientes.add(cliente);
             }
         } catch (SQLException e) {
