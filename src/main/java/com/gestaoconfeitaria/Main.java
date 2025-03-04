@@ -1,4 +1,4 @@
-package com.gestaoconfeitaria;
+package main.java.com.gestaoconfeitaria;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

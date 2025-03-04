@@ -1,4 +1,4 @@
-package com.gestaoconfeitaria.dao;
+package main.java.com.gestaoconfeitaria.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.gestaoconfeitaria.model.Estoque;
-import com.gestaoconfeitaria.util.ConnectionFactory;
+import main.java.com.gestaoconfeitaria.model.Estoque;
+import main.java.com.gestaoconfeitaria.util.ConnectionFactory;
 
 public class EstoqueDAO {
     private Connection connection;

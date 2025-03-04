@@ -27,7 +27,10 @@ Este projeto tem como objetivo desenvolver um sistema de gestão para uma confei
 5. Configurar o projeto como um projeto Java no Eclipse:
    - Clique com o botão direito no projeto e selecione "Properties".
    - Vá para "Java Build Path" e adicione a pasta `src` como source folder.
-6. Executar o programa:
+6. Adicionar o driver JDBC do PostgreSQL ao projeto:
+   - Baixar o driver JDBC do PostgreSQL a partir do site oficial: [PostgreSQL JDBC Driver](https://jdbc.postgresql.org/download.html)
+   - Clique com o botão direito no projeto e selecione "Build Path" > "Add External Archives..." e adicione o arquivo JAR do driver JDBC.
+7. Executar o programa:
    - Clique com o botão direito no arquivo `Main.java` e selecione "Run As" > "Java Application".
 
 ## Contribuição

@@ -1,4 +1,4 @@
-package com.gestaoconfeitaria.model;
+package main.java.com.gestaoconfeitaria.model;
 
 import java.sql.Timestamp;
 import java.util.List;
